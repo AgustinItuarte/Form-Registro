@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font: 1em / 1.4 Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.containerImg {
+    background-image: url(img/arboles.avif);
+    height: 100vh;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.containerRegistro {
+    background-color: #E5E7EB;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulo {
+    position: relative;
+    background-color: black;
+    height: 20%;
+    width: 100%;
+    top: 150px;
+    opacity: 0.6;
+}
