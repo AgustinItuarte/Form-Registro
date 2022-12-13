@@ -13,7 +13,6 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-
 }
 
 .containerImg {
@@ -22,7 +21,7 @@ body {
     width: 50vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 5px 5px 20px black inset;
 }
 
 .containerRegistro {
@@ -42,6 +41,7 @@ body {
     width: 100%;
     top: 150px;
     background-color: rgba(0, 0, 0, 0.6);;
+    box-shadow: 0 0 6px 0px black;
 }
 
 .logo {
@@ -54,17 +54,15 @@ body {
     font-size: 3.5rem;
 }
 
-.guia, .registoTitulo {
+.guia, .registroTitulo {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: left;
-
 }
 
 .guia {
     padding: 40px;
     padding-top: 124px;
-
 }
 
 .registro {
@@ -72,6 +70,7 @@ body {
     box-shadow: 2px black;
     height: 40vh;
     width: 100%;
+    box-shadow: 1px 1px 8px grey;
 }
 
 .formRegistro {
@@ -82,21 +81,47 @@ body {
     width: 500px;
 }
 
-label, input {
+label, input,
+button {
     display: block;
     font-size: 0.8rem;
     font-weight: bold;
 }
 
 input {
-    height: 20px;
+    height: 23px;
     width: 200px;
     border-radius: 5px;
-    border-color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+    background-color: #fdfdfd;
 }
 
-.registoTitulo {
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 1px 1px 6px grey;
+}
+
+.registroTitulo {
     padding-left: 40px;
     padding-top: 15px;
+}
 
+.error:required {
+    border-color: red;
+}
+
+button {
+    background-color: #596D48;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 175px;
+    box-shadow: 1px 1px 6px grey;
+}
+
+button:active {
+    background-color: #4d5e3e;
 }
