@@ -15,7 +15,6 @@
                 <h1 class="nombrePagina">E-COMPRAS</h1>
             </div>
         </div>
-
         <div class="containerRegistro">
             <p class="guia">Para poder realizar compras en nuestra pagina, porfavor <br> registrese rellenando los siguientes datos.</p>
             <div class="registro">
@@ -40,7 +39,7 @@
                     <div>
                         <label for="passwd">CONTRASEÑA</label>
                         <input type="password" name="contraseña" id="passwd" class="error" required>
-                        <span hidden>* Contraseñas no coinciden</span>
+                        <span hidden class="passwdError">* Contraseñas no coinciden</span>
                     </div>
                     <div>
                         <label for="passwdConf">CONFIRMAR CONTRASEÑA</label>
@@ -48,7 +47,7 @@
                     </div>
 
                     <div>
-                        <button type="submit">Crear Cuenta</button>
+                        <button type="button">Crear Cuenta</button>
                         <p class="inicioSesion">Ya tienes una cuenta? <a href="">Inicia sesion</a></p>
                     </div>
                 </form>
@@ -56,4 +55,5 @@
         </div>
     </div>
 </body>
+<script src="scripts.js"></script>
 </html>

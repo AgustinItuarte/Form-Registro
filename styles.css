@@ -125,3 +125,7 @@ button {
 button:active {
     background-color: #4d5e3e;
 }
+
+.passwdError {
+    color: red;
+}
